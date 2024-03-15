@@ -10,7 +10,8 @@ jobs:
         - name: Checkout
           uses: actions/checkout@v2
           with:
-            ref: ${{ github.event.pull_request.head.ref }}
+            #ref: ${{ github.event.pull_request.head.ref }}
+            ref: main
         - name: ZAP Scan
           uses: zaproxy/action-baseline@v0.11.0
           with:
